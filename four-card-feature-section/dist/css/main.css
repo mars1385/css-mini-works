@@ -9,18 +9,12 @@ body {
   background-color: #fafafa;
   font-size: 15px; }
 
-.container {
-  max-width: 1440px;
-  padding: 0 1.5rem;
-  margin: auto;
-  overflow: hidden; }
-
 .text {
   color: #a3a5ae; }
 
 .main-header {
   max-width: 500px;
-  margin: 50px auto;
+  margin: 0px auto;
   text-align: center; }
   .main-header h1 {
     font-weight: 200;
@@ -29,3 +23,42 @@ body {
       font-weight: 600; }
   .main-header p {
     margin: 10px 0; }
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+  .card-section .card {
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 15px;
+    max-width: 350px;
+    border-top: 4px solid;
+    border-radius: 5px; }
+    .card-section .card .title {
+      margin-bottom: 14px; }
+    .card-section .card .text {
+      font-size: 13px;
+      margin-bottom: 35px; }
+    .card-section .card .icon {
+      display: block;
+      margin-left: auto; }
+    .card-section .card.push-b {
+      transform: translateY(50%); }
+    .card-section .card.red {
+      border-color: #ea5353; }
+    .card-section .card.orange {
+      border-color: #fcaf4a; }
+    .card-section .card.cyan {
+      border-color: #45d3d3; }
+    .card-section .card.blue {
+      border-color: #549ef2; }
+
+@media (max-width: 825px) {
+  .card-section .card.push-b {
+    transform: translateY(0); } }
