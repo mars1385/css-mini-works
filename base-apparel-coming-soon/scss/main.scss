@@ -1,6 +1,6 @@
 //import
 @import 'config';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 //rest
 
 * {
@@ -10,7 +10,22 @@
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	background-color: $color-light-gray;
-	font-size: 15px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+
+	// left
+	.left-section {
+		width: 60%;
+	}
+	// right
+	.right-section {
+		// background-color: red;
+		background: url('../images/hero-desktop.jpg') no-repeat center center/cover;
+		width: 40%;
+	}
 }
