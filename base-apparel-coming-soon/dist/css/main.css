@@ -5,6 +5,7 @@
   box-sizing: border-box; }
 
 body {
+  background: url("../images/bg-pattern-desktop.svg") no-repeat center center/cover;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px; }
 
@@ -12,7 +13,32 @@ body {
   height: 100vh;
   display: flex; }
   .container .left-section {
+    padding: 0 170px 0 130px;
     width: 60%; }
+    .container .left-section .title {
+      text-transform: uppercase;
+      font-size: 3.6rem;
+      letter-spacing: 0.8rem;
+      color: #413a3a; }
+      .container .left-section .title .pink {
+        color: #ce9797;
+        font-weight: 200; }
+    .container .left-section .text {
+      color: #ce9797;
+      line-height: 25px; }
+    .container .left-section .logo {
+      margin: 60px 0;
+      width: 200px; }
+      .container .left-section .logo img {
+        width: 100%; }
+    .container .left-section .form .text-input {
+      width: 100%; }
+    .container .left-section .form .arrow-btn {
+      background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+      border: none;
+      width: 90px;
+      padding: 15px;
+      border-radius: 50px; }
   .container .right-section {
     background: url("../images/hero-desktop.jpg") no-repeat center center/cover;
     width: 40%; }
