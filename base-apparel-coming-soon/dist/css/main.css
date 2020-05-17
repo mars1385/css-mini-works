@@ -13,7 +13,7 @@ body {
   height: 100vh;
   display: flex; }
   .container .left-section {
-    padding: 0 170px 0 130px;
+    padding: 0 180px 0 135px;
     width: 60%; }
     .container .left-section .title {
       text-transform: uppercase;
@@ -31,14 +31,46 @@ body {
       width: 200px; }
       .container .left-section .logo img {
         width: 100%; }
-    .container .left-section .form .text-input {
-      width: 100%; }
-    .container .left-section .form .arrow-btn {
-      background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
-      border: none;
-      width: 90px;
-      padding: 15px;
-      border-radius: 50px; }
+    .container .left-section .form {
+      position: relative; }
+      .container .left-section .form .text-input {
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid #ce9797;
+        padding: 15px 25px;
+        border-radius: 50px;
+        font-size: 1rem; }
+      .container .left-section .form .error-icon {
+        display: none;
+        position: absolute;
+        top: 13px;
+        left: 365px; }
+      .container .left-section .form .arrow-btn {
+        background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+        border: none;
+        width: 100px;
+        padding: 15px;
+        box-shadow: 2px 5px 10px #ce9797;
+        border-radius: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        top: 0; }
+        .container .left-section .form .arrow-btn:hover {
+          background-image: linear-gradient(135deg, white, #ee8c8c); }
+      .container .left-section .form .error {
+        display: none;
+        margin-top: 15px;
+        margin-left: 25px;
+        color: #f96262;
+        font-size: 12px; }
+      .container .left-section .form.error .error {
+        display: block; }
+      .container .left-section .form.error .error-icon {
+        display: block; }
+      .container .left-section .form.error .text-input {
+        border: 1px solid #f96262; }
   .container .right-section {
     background: url("../images/hero-desktop.jpg") no-repeat center center/cover;
     width: 40%; }

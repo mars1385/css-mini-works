@@ -21,7 +21,7 @@ body {
 
   // left
   .left-section {
-    padding: 0 170px 0 130px;
+    padding: 0 180px 0 135px;
     width: 60%;
 
     .title {
@@ -50,22 +50,60 @@ body {
     }
     // form
     .form {
+      position: relative;
+
       .text-input {
         width: 100%;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid $color-desaturated-red;
+        padding: 15px 25px;
+        border-radius: 50px;
+        font-size: 1rem;
       }
 
       .error-icon {
+        display: none;
+        position: absolute;
+        top: 13px;
+        left: 365px;
       }
 
       .arrow-btn {
         background-image: $color-linear-first;
         border: none;
-        width: 90px;
+        width: 100px;
         padding: 15px;
+        box-shadow: 2px 5px 10px hsl(0, 36%, 70%);
         border-radius: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        &:hover {
+          background-image: $color-linear-sec;
+        }
       }
 
       .error {
+        display: none;
+        margin-top: 15px;
+        margin-left: 25px;
+        color: $color-soft-red;
+        font-size: 12px;
+      }
+
+      &.error {
+        .error {
+          display: block;
+        }
+        .error-icon {
+          display: block;
+        }
+        .text-input {
+          border: 1px solid $color-soft-red;
+        }
       }
     }
   }
