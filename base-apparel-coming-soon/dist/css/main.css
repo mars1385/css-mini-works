@@ -13,24 +13,23 @@ body {
   height: 100vh;
   display: flex; }
   .container .left-section {
-    padding: 0 180px 0 135px;
+    padding: 0 75px;
     width: 60%; }
-    .container .left-section .title {
-      text-transform: uppercase;
-      font-size: 3.6rem;
-      letter-spacing: 0.8rem;
-      color: #413a3a; }
-      .container .left-section .title .pink {
+    .container .left-section .inner-container {
+      max-width: 80%;
+      margin: 0; }
+      .container .left-section .inner-container .title {
+        text-transform: uppercase;
+        font-size: 3.6rem;
+        letter-spacing: 0.8rem;
+        color: #413a3a; }
+        .container .left-section .inner-container .title .pink {
+          color: #ce9797;
+          font-weight: 200; }
+      .container .left-section .inner-container .text {
         color: #ce9797;
-        font-weight: 200; }
-    .container .left-section .text {
-      color: #ce9797;
-      line-height: 25px; }
-    .container .left-section .logo {
-      margin: 60px 0;
-      width: 200px; }
-      .container .left-section .logo img {
-        width: 100%; }
+        line-height: 25px;
+        margin: 40px 0; }
     .container .left-section .form {
       position: relative; }
       .container .left-section .form .text-input {
@@ -41,6 +40,9 @@ body {
         padding: 15px 25px;
         border-radius: 50px;
         font-size: 1rem; }
+        .container .left-section .form .text-input:focus {
+          outline: none;
+          box-shadow: 0px 0px 10px #ce9797; }
       .container .left-section .form .error-icon {
         display: none;
         position: absolute;
@@ -56,9 +58,10 @@ body {
         height: 50px;
         position: absolute;
         right: 0;
-        top: 0; }
+        top: 0;
+        cursor: pointer; }
         .container .left-section .form .arrow-btn:hover {
-          background-image: linear-gradient(135deg, white, #ee8c8c); }
+          opacity: 0.7; }
       .container .left-section .form .error {
         display: none;
         margin-top: 15px;
@@ -71,6 +74,17 @@ body {
         display: block; }
       .container .left-section .form.error .text-input {
         border: 1px solid #f96262; }
+    .container .left-section .logo {
+      margin: 60px 0;
+      width: 200px; }
+      .container .left-section .logo img {
+        width: 100%; }
   .container .right-section {
     background: url("../images/hero-desktop.jpg") no-repeat center center/cover;
     width: 40%; }
+
+@media (max-width: 500px) {
+  .container .left-section {
+    width: 100%; }
+  .container .right-section {
+    display: none; } }

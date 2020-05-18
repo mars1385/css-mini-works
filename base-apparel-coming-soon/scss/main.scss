@@ -21,33 +21,29 @@ body {
 
   // left
   .left-section {
-    padding: 0 180px 0 135px;
+    padding: 0 75px;
     width: 60%;
 
-    .title {
-      text-transform: uppercase;
-      font-size: 3.6rem;
-      letter-spacing: 0.8rem;
-      color: $color-dark-grayish-red;
-      .pink {
+    .inner-container {
+      max-width: 80%;
+      margin: 0;
+      .title {
+        text-transform: uppercase;
+        font-size: 3.6rem;
+        letter-spacing: 0.8rem;
+        color: $color-dark-grayish-red;
+        .pink {
+          color: $color-desaturated-red;
+          font-weight: 200;
+        }
+      }
+
+      .text {
         color: $color-desaturated-red;
-        font-weight: 200;
+        line-height: 25px;
+        margin: 40px 0;
       }
-    }
-
-    .text {
-      color: $color-desaturated-red;
-      line-height: 25px;
-    }
-
-    .logo {
-      margin: 60px 0;
-      width: 200px;
-
-      img {
-        width: 100%;
-      }
-    }
+    } //end inner container
     // form
     .form {
       position: relative;
@@ -60,6 +56,11 @@ body {
         padding: 15px 25px;
         border-radius: 50px;
         font-size: 1rem;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0px 0px 10px hsl(0, 36%, 70%);
+        }
       }
 
       .error-icon {
@@ -80,9 +81,10 @@ body {
         position: absolute;
         right: 0;
         top: 0;
+        cursor: pointer;
 
         &:hover {
-          background-image: $color-linear-sec;
+          opacity: 0.7;
         }
       }
 
@@ -106,11 +108,32 @@ body {
         }
       }
     }
-  }
+    // logo
+    .logo {
+      margin: 60px 0;
+      width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+  } // end left
+
   // right
   .right-section {
     // background-color: red;
     background: url('../images/hero-desktop.jpg') no-repeat center center/cover;
     width: 40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    .left-section {
+      width: 100%;
+    }
+    .right-section {
+      display: none;
+    }
   }
 }
