@@ -14,10 +14,11 @@
   <body>
     <div class="container">
       <div class="left-section">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="logo" class="image-logo" />
-        </div>
         <div class="inner-container">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" class="image-logo" />
+          </div>
+          <img src="images/hero-mobile.jpg" alt="mobile background" class="bg-mobile" />
           <h1 class="title">
             <span class="pink">We're </span>
             coming soon
@@ -26,15 +27,18 @@
             Hello fellow shoppers! We're currently building our new fashion store. Add your email below to
             stay up-to-date with announcements and our launch deals.
           </p>
+          <form class="form">
+            <input type="email" class="text-input" id="email" placeholder="Email Address" />
+            <img src="images/icon-error.svg" alt="error" class="error-icon" />
+            <button class="arrow-btn"><img src="images/icon-arrow.svg" alt="submit" /></button>
+            <span class="error">Please provide a email address</span>
+          </form>
         </div>
-        <form class="form">
-          <input type="email" class="text-input" placeholder="Email Address" />
-          <img src="images/icon-error.svg" alt="error" class="error-icon" />
-          <button class="arrow-btn"><img src="images/icon-arrow.svg" alt="submit" /></button>
-          <span class="error">Please provide a email address</span>
-        </form>
       </div>
       <div class="right-section"></div>
     </div>
+
+    <!-- script -->
+    <script src="js/main.js"></script>
   </body>
 </html>
